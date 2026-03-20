@@ -1,0 +1,50 @@
+# ============================================================
+# config.yaml
+# ============================================================
+
+# ── Cohorts ──────────────────────────────────────────────────
+# Each entry must be a folder containing:
+#   - *.gvcf.gz + *.gvcf.gz.tbi files
+#   - metadata.tsv (columns: SampleID, Age, Ancestry, IQ)
+#
+# To add a new cohort: add it here, create the folder,
+# drop in gVCFs + metadata, then rerun. Existing cohorts skip.
+cohorts:
+  - Cohort_A
+  - Cohort_B
+
+# ── Output directory ─────────────────────────────────────────
+results_dir: results
+
+# ── QC thresholds ────────────────────────────────────────────
+min_dp: 20    # FORMAT/DP must be strictly greater than this
+min_gq: 30    # FORMAT/GQ must be >= this
+
+# ── Chromosomes for scatter/gather ───────────────────────────
+# Remove chrY for female-only cohorts.
+# For quick testing, restrict to: [chr1, chr22]
+chroms:
+  - chr1
+  - chr2
+  - chr3
+  - chr4
+  - chr5
+  - chr6
+  - chr7
+  - chr8
+  - chr9
+  - chr10
+  - chr11
+  - chr12
+  - chr13
+  - chr14
+  - chr15
+  - chr16
+  - chr17
+  - chr18
+  - chr19
+  - chr20
+  - chr21
+  - chr22
+  - chrX
+  - chrY

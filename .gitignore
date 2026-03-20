@@ -1,0 +1,25 @@
+# Pipeline outputs
+results/
+logs/
+benchmarks/
+scatter/
+.snakemake/
+
+# Data — never commit raw genomic files
+*.gvcf.gz
+*.gvcf.gz.tbi
+*.bam
+*.bai
+
+# Large outputs
+*.parquet
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# OS
+.DS_Store
+Thumbs.db
