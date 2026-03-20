@@ -165,3 +165,18 @@ No Snakefile changes needed — same pipeline runs locally or on a cluster.
 | Rerun one rule | `snakemake --cores 8 --forcerun make_report` |
 | Unlock after crash | `snakemake --unlock` |
 | Visualise DAG | `snakemake --dag \| dot -Tpng > dag.png` |
+
+
+## Citation / Reuse
+
+If you use or adapt this pipeline, please credit the author.
+
+---
+
+## Author
+---
+
+**Nadeem Khan, PhD**
+Bioinformatician — INRS–Centre Armand-Frappier Santé-Biotechnologie, Laval, QC, Canada
+nkhan119@uottawa.ca
+[@nkhan119](https://github.com/nkhan119)
